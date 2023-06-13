@@ -10,9 +10,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
-runs-on: ubuntu-latest
+  #Build, test and publish .net web project in repository
+  buildandtest:
+    runs-on: ubuntu-latest
     steps:
     #checkout the repository
     - uses: actions/checkout@v2
